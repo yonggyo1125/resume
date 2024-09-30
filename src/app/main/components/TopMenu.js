@@ -8,8 +8,9 @@ const StyledNav = styled.nav`
   width: 100%;
   height: 50px;
   background: #fff;
+  border-bottom: 1px solid #000;
   a {
-    line-height: 50px;
+    line-height: 49px;
     padding: 0 30px;
     font-size: 1.75rem;
   }
