@@ -5,7 +5,9 @@ const Wrapper = styled.div`
   h2 {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 25px;
 
     .tit {
       font-size: 1.4rem;

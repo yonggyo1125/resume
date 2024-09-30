@@ -2,16 +2,17 @@ import React from 'react';
 import { Section } from 'react-fullpage';
 import ProfileImage from './ProfileImage';
 import styled from 'styled-components';
+import Item from './Item';
 
 const Wrapper = styled.div`
   padding-top: 51px;
   .inner {
     display: flex;
+    flex-wrap: wrap;
 
     * {
       width: 0;
       flex-grow: 1;
-      flex-wrap: wrap;
     }
 
     * + * {
@@ -25,7 +26,10 @@ const InfoAbout = () => {
     <Section>
       <Wrapper>
         <ProfileImage />
-        <div className="layout-width inner"></div>
+        <div className="layout-width inner">
+          <Item title="INFO"></Item>
+          <Item title="ABOUT"></Item>
+        </div>
       </Wrapper>
     </Section>
   );
