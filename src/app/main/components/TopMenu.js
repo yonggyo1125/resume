@@ -8,9 +8,11 @@ const StyledNav = styled.nav`
   width: 100%;
   height: 50px;
   background: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
+  a {
+    line-height: 50px;
+    padding: 0 30px;
+    font-size: 1.75rem;
+  }
 `;
 
 const TopMenu = () => {
