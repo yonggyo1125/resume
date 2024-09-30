@@ -14,6 +14,14 @@ const StyledNav = styled.nav`
     padding: 0 30px;
     font-size: 1.75rem;
   }
+
+  @media all and (max-width: 460px) {
+    a {
+      padding: 0 10px;
+      font-size: 1.65rem;
+      letter-spacing: -0.5px;
+    }
+  }
 `;
 
 const TopMenu = () => {
