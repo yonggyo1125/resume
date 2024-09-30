@@ -10,13 +10,14 @@ const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
 
-    * {
+    .item {
       width: 0;
       flex-grow: 1;
+      margin: 20px 0;
     }
 
-    * + * {
-      margin-left: 10px;
+    .item + .item {
+      margin-left: 20px;
     }
   }
 `;

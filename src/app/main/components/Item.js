@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  h2 {
+  .item-title {
     display: flex;
     align-items: center;
     width: 100%;
@@ -12,6 +12,7 @@ const Wrapper = styled.div`
     .tit {
       font-size: 1.4rem;
       margin-right: 10px;
+      width: auto;
     }
 
     .bar {
@@ -24,11 +25,11 @@ const Wrapper = styled.div`
 
 const Item = ({ children, title }) => {
   return (
-    <Wrapper>
-      <h2>
+    <Wrapper className="item">
+      <div className="item-title">
         <div className="tit">{title}</div>
         <div className="bar"></div>
-      </h2>
+      </div>
       <div className="item-content">{children}</div>
     </Wrapper>
   );
