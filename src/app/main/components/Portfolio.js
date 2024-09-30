@@ -70,7 +70,34 @@ const items = {
   },
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  padding-top: 100px;
+
+  .tab-group {
+    display: flex;
+    height: 45px;
+    border-bottom: 2px solid #000;
+
+    li {
+      padding: 0 25px;
+      cursor: pointer;
+      border: 1px solid #000;
+      border-bottom: 0;
+      margin-right: 5px;
+      line-height: 43px;
+      font-size: 1.4rem;
+    }
+
+    li.on {
+      background: #000;
+      color: #fff;
+    }
+  }
+
+  .tab-content {
+    padding: 20px;
+  }
+`;
 
 const Portfolio = () => {
   const [item, setItem] = useState(items.tab1);
