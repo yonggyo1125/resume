@@ -34,6 +34,10 @@ dl, dt, dd {
   margin: 0 auto;
 }
 
+.Section {
+  background: #fff;
+}
+
 @media all and (max-width: 650px) {
   html {
     font-size: 11px;
