@@ -73,9 +73,11 @@ const Wrapper = styled.div``;
 
 const Portfolio = () => {
   const [item, setItem] = useState(items.tab1);
+  const [tab, setTab] = useState('tab1');
 
   const onClick = useCallback((tab) => {
     setItem(items[tab]);
+    setTab(tab);
   }, []);
 
   const { title, Content } = item;
