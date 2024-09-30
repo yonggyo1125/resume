@@ -5,6 +5,19 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   padding-top: 51px;
+  .inner {
+    display: flex;
+
+    * {
+      width: 0;
+      flex-grow: 1;
+      flex-wrap: wrap;
+    }
+
+    * + * {
+      margin-left: 10px;
+    }
+  }
 `;
 
 const InfoAbout = () => {
@@ -12,9 +25,7 @@ const InfoAbout = () => {
     <Section>
       <Wrapper>
         <ProfileImage />
-        <div className="layout-width">
-          <h1>이력서</h1>
-        </div>
+        <div className="layout-width inner"></div>
       </Wrapper>
     </Section>
   );
