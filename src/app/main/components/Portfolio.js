@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { Section } from 'react-fullpage';
 import Image from 'next/image';
 import styled from 'styled-components';
+import classNames from 'classnames';
 
 const Tab1Content = () => {
   return (
@@ -88,10 +89,29 @@ const Portfolio = () => {
         <h2>PORTFOLIO</h2>
 
         <ul className="tab-group">
-          <li onClick={() => onClick('tab1')}>포켓몬 도감</li>
-          <li onClick={() => onClick('tab2')}>HIDOG</li>
-          <li onClick={() => onClick('tab3')}>상담관리</li>
+          <li
+            onClick={() => onClick('tab1')}
+            className={classNames({ on: tab === 'tab1' })}
+          >
+            포켓몬 도감
+          </li>
+          <li
+            onClick={() => onClick('tab2')}
+            className={classNames({ on: tab === 'tab2' })}
+          >
+            HIDOG
+          </li>
+          <li
+            onClick={() => onClick('tab3')}
+            className={classNames({ on: tab === 'tab3' })}
+          >
+            상담관리
+          </li>
         </ul>
+        <div className="tab-content">
+          <div class="title">{title}</div>
+          <Content />
+        </div>
       </Wrapper>
     </Section>
   );
