@@ -15,19 +15,21 @@ const ProfileImage = ({ className }) => {
 };
 
 const StyledProfileImage = styled(ProfileImage)`
-  background: #bcbcbc;
-  height: 350px;
+  background: #bcbcbc url('/images/profile.png') no-repeat calc(50% + 318px)
+    bottom;
+  height: 450px;
   padding: 50px 30px 10px;
   position: relative;
 
   .tit {
     position: absolute;
     bottom: 10px;
-    font-size: 1.15rem;
+    font-size: 1.35rem;
 
     span {
-      font-size: 1.75rem;
+      font-size: 2rem;
       margin-right: 10px;
+      letter-spacing: -1px;
     }
   }
 `;
